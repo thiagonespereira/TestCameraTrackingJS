@@ -7,8 +7,11 @@
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+  <div class="demo-frame">
+    <div class="demo-container">
+      <!-- <video id="video" #video width="240" height="320" preload autoplay loop muted></video> -->
+      <canvas id="canvas" #canvas width="240" height="320"></canvas>
+    </div>
+    <div class="texto" [hidden]="textoVis">{{texto}}</div>
+  </div>
 </ion-content>
